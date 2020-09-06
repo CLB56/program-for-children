@@ -13,13 +13,17 @@ from PIL import ImageTk, Image
 # Variables préliminaires
 #########################
 
-chemin_dossier = "/home/sapharic/Documents/5_floupy/"
+chemin_dossier = "/home/sapharic/Documents/2_floupy/"
 
 global liste_reponses
 liste_reponses = []
 
 global index_question
 index_question = 0
+
+from IPython import embed; embed()
+import ipdb
+ipdb.set_trace(context=5)
 
 ################################################
 # Creatioon de la structure graphique generale #
@@ -61,6 +65,8 @@ c1 = ["Somme nous en Juillet ou Aout ?"]
 r1 = [1]
 
 requete_1 = [q1, c1, r1]
+
+embed()
 
 # Assemblage de toutes le requetes
 requetes = [requete_0, requete_1]
